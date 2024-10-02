@@ -153,6 +153,7 @@ footer {
 }
 
 .footer-content {
+    
     display: flex;
     justify-content: space-between; /* Space between logo and other content */
     align-items: center; /* Align items to the center */
@@ -180,6 +181,7 @@ footer {
 }
 
 .footer-links h3, .footer-contact h3 {
+    font-family: "Fugaz One", sans-serif;
     align-items: flex-start;
     margin-bottom: 15px;
     font-size: 1.5rem;
