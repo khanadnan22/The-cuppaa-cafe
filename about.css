@@ -1,0 +1,214 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(57, 34, 34, 0.9);
+    background-image: url('images/home page background img.png');
+    background-size: cover;
+    color: #f0ece2;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header / Navbar */
+header {
+    font-family: "Gruppo", sans-serif;
+    background-color: rgba(58, 42, 39, 0); /* Transparent */
+    padding: 5px;
+    text-align: center;
+    position: sticky;
+    top: 0; /* Sticks the header to the top of the page */
+    border-radius: 0px;
+    width: 80%; /* Maintain the same width as before */
+    z-index: 100; /* Ensures the header stays on top */
+    margin: 0 auto; /* Center the header itself */
+}
+
+/* Navbar styles */
+.navbar {
+    font-family: "Gruppo", sans-serif;
+    display: flex;
+    justify-content: space-between; /* Distribute space between logo and nav items */
+    align-items: center;
+    padding: 0px 20px;
+    border-radius: 36px;
+    background: rgba(203, 203, 203, 0);
+    backdrop-filter: blur(90px);
+    width: 100%; /* Full width for navbar items */
+    position: relative; /* Allows for absolute positioning of logo */
+}
+
+.nav-logo {
+    width: 50px;
+    height: auto;
+    margin-right: -570px; /* Space between logo and the navigation text */
+}
+
+.navbar h1 {
+    color: #f0ece2;
+    font-size: 2rem;
+    font-family: "Gurajada", sans-serif;
+    margin-left: 70px; /* Optional space between the logo and text */
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Center the nav links */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: #f0ece2;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #d4a373;
+}
+
+/* About Us Page */
+.about-page {
+    background-image: url('images/home page background img.png'); /* Corrected to use URL() */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Avoid repeating the image */
+    width: 100%; /* Full width of the page */
+    height: 80vh; /* Take up 80% of viewport height for better image visibility */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Allows positioning of children */
+}
+
+.about-banner {
+    background-color: rgba(0, 0, 0, 0); /* Dark overlay for better text readability */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    padding: 40px; /* Adjusted padding for better spacing */
+    width: 90%; /* Adjusted width for better aesthetics */
+    max-width: 1200px; /* Maximum width for larger screens */
+    margin: 0 auto;
+    display: flex; /* Flexbox for side-by-side layout */
+    justify-content: space-between; /* Logo on one side, text on the other */
+    align-items: center;
+    color: #f0ece2; /* Light text color for contrast against the dark background */
+}
+
+/* Logo styling */
+.about-logo {
+    flex: 1; /* Logo takes up one part of the available width */
+    display: flex;
+    justify-content: center; /* Center logo horizontally */
+    align-items: center; /* Center logo vertically */
+}
+
+.about-logo-img {
+    width: 200px; /* Adjust size according to your preference */
+    height: auto;
+}
+
+/* Text styling */
+.about-text {
+    flex: 2; /* Text takes up two parts of the available width */
+    padding-left: 30px; /* Add some space between the logo and text */
+}
+
+.about-text h2 {
+    color: #d4a373; /* Accent color for the heading */
+    font-size: 3rem; /* Header font size */
+    margin-bottom: 20px; /* Margin below heading */
+    font-family: 'Gruppo', sans-serif; /* Font for the header */
+}
+
+.about-text p {
+    font-size: 1.2rem; /* Increased font size for better readability */
+    line-height: 1.6; /* Improved line height for better spacing */
+    margin-bottom: 15px; /* Increased margin for spacing between paragraphs */
+    color: #f0ece2; /* Ensuring the text is legible against the background */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Optional shadow for depth */
+}
+
+/* Footer */
+footer {
+    background-image: url('images/footer bg image.png'); /* Add your background image path */
+    background-color: rgba(0, 0, 0, 0);
+    padding: 40px 0;
+    text-align: center;
+    color: #f0ece2;
+    border-top: 1px solid #d4a373;
+    width: 100%; /* Full width */
+    height: auto; /* Adjust footer height for better alignment */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Space between logo and other content */
+    align-items: center; /* Align items to the center */
+    padding: 0 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    flex: 0 0 auto; /* Prevent the logo from growing */
+    display: flex;
+    justify-content: flex-start; /* Align the logo to the left */
+    align-items: center; /* Center logo vertically */
+}
+
+.footer-logo img {
+    width: 140px; /* Adjust logo size */
+}
+
+.footer-links,
+.footer-contact {
+    display: flex;
+    flex-direction: column; /* Stack the links vertically */
+    align-items:normal; /* Center other footer content */
+}
+
+.footer-links h3, .footer-contact h3 {
+    align-items: flex-start;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #d4a373;
+}
+
+.footer-links ul, .footer-contact ul {
+    list-style: none;
+    padding: 0; /* Remove default padding */
+}
+
+.footer-links ul li, .footer-contact ul li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.footer-links ul li a, .footer-contact ul li a {
+    color: #f0ece2;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover, .footer-contact ul li a:hover {
+    color: #d4a373;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.1rem;
+    color: #f0ece2;
+    opacity: 0.8;
+}
