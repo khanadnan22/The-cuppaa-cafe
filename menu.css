@@ -302,3 +302,7 @@ footer a {
 footer a:hover {
     color: #fff;
 }
+
+footer h5{
+     font-family: 'Fugaz One', sans-serif;
+}
