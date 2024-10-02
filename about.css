@@ -44,7 +44,7 @@ header {
 }
 
 .nav-logo {
-    width: 50px;
+    width: 60px;
     height: auto;
     margin-right: -570px; /* Space between logo and the navigation text */
 }
@@ -53,7 +53,7 @@ header {
     color: #f0ece2;
     font-size: 2rem;
     font-family: "Gurajada", sans-serif;
-    margin-left: 70px; /* Optional space between the logo and text */
+    margin-left: 240px; /* Optional space between the logo and text */
 }
 
 .navbar ul {
@@ -153,7 +153,6 @@ footer {
 }
 
 .footer-content {
-    
     display: flex;
     justify-content: space-between; /* Space between logo and other content */
     align-items: center; /* Align items to the center */
@@ -181,10 +180,10 @@ footer {
 }
 
 .footer-links h3, .footer-contact h3 {
-    font-family: "Fugaz One", sans-serif;
+    font-family: 'Fugaz One', sans-serif;
     align-items: flex-start;
     margin-bottom: 15px;
-    font-size: 1.5rem;
+    font-size: 0.5 rem;
     color: #d4a373;
 }
 
