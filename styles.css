@@ -412,6 +412,7 @@ footer {
 }
 
 .footer-name h3 {
+    align-item:flex-start;
     margin: 10px 0;
 }
 
